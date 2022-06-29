@@ -6,6 +6,7 @@ import url from '../helpers/url';
 import cookie from 'js-cookie';
 import NavBar from '../components/navbar';
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Admin() {
 
@@ -14,6 +15,8 @@ export default function Admin() {
   const [showPassword, setShowPassword]=useState(false);
   const [error, setError]=useState("");
   const [success, setSuccess]=useState("");
+
+  const router = useRouter();
 
   useEffect(() => {
 
@@ -39,6 +42,7 @@ export default function Admin() {
       if(result.data.message.success){
         setSuccess(result.data.message.success);
         cookie.set('token', result.data.token);
+        router.push("/");
         window.location.reload(false);
       }
     })
