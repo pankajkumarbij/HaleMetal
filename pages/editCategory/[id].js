@@ -61,7 +61,7 @@ export default function EditCategory() {
         <div className="border shadow-xl p-6 sm:rounded-lg">
           <p className="text-red-600 text-lg md:text-3xl w-full flex justify-center"><u><b>Edit Category</b></u></p>
           <div className="mb-4 mt-6">
-            <label className="block text-grey-darker text-sm font-bold mb-2" for="category">
+            <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="category">
               Category Name
             </label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="category" type="text" placeholder="category name" value={category} onChange={(e)=>setCategory(e.target.value)} />

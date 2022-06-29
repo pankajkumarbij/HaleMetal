@@ -65,7 +65,7 @@ export default function OrderTransportLabour(){
           <p className="text-lg font-bold text-gray-700 uppercase bg-gray-200 p-3 rounded-t-lg">Add Transport Labour</p>
           <div className="bg-white rounded-lg border shadow-md pb-2 px-4 pt-2 mt-2">
             <div className="mb-4 mt-2">
-              <label for="Vehicle Type" className="block text-grey-darker text-sm font-bold mb-2">Vehicle Type</label>
+              <label htmlFor="Vehicle Type" className="block text-grey-darker text-sm font-bold mb-2">Vehicle Type</label>
               <select id="Vehicle Type" className="shadow bg-white border text-gray-darker rounded block w-full py-2 px-3" onChange={(e)=>setVehicleType(e.target.value)}>
                 <option selected disabled>Choose Vehicle Type</option>
                 <option value="Truck">Truck</option>
@@ -76,21 +76,21 @@ export default function OrderTransportLabour(){
               </select>
             </div>
             <div className="mb-4 mt-2">
-              <label className="block text-grey-darker text-sm font-bold mb-2" for="Vehicle Number">
+              <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Vehicle Number">
                 Vehicle Number
               </label>
               <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Vehicle Number" type="text" placeholder="Vehicle Number" onChange={(e)=>setVehicleNumber(e.target.value)} />
             </div>
             <div className="flex justify-between w-full">
               <div className="mb-4 mt-2 w-1/2">
-                <label className="block text-grey-darker text-sm font-bold mb-2" for="Driver Name">
+                <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Driver Name">
                   Driver Name
                 </label>
                 <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Driver Name" type="text" placeholder="Driver Name" onChange={(e)=>setDriverName(e.target.value)} />
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <div className="mb-4 mt-2 w-1/2">
-                <label className="block text-grey-darker text-sm font-bold mb-2" for="Driver Mobile">
+                <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Driver Mobile">
                   Driver Mobile
                 </label>
                 <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Driver Mobile" type="number" placeholder="Driver Mobile" onChange={(e)=>setDriverMobile(e.target.value)} />
@@ -98,14 +98,14 @@ export default function OrderTransportLabour(){
             </div>
             <div className="flex justify-between w-full">
               <div className="mb-4 mt-2 w-1/2">
-                <label className="block text-grey-darker text-sm font-bold mb-2" for="Transport Charge">
+                <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Transport Charge">
                   Transport Charge
                 </label>
                 <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Transport Charge" type="text" placeholder="Transport Charge" onChange={(e)=>setTransportCharge(e.target.value)} />
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <div className="mb-4 mt-2 w-1/2">
-                <label className="block text-grey-darker text-sm font-bold mb-2" for="Labour Charge">
+                <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Labour Charge">
                   Labour Charge
                 </label>
                 <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Labour Charge" type="text" placeholder="Labour Charge" onChange={(e)=>setLabourCharge(e.target.value)} />

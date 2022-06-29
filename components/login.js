@@ -48,13 +48,13 @@ export default function Login() {
   return (
     <>
       <div className="mb-4">
-        <label className="block text-grey-darker text-sm font-bold mb-2" for="mobile">
+        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="mobile">
           Mobile Number
         </label>
         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="mobile" type="number" placeholder="mobile number" onChange={(e)=>setMobile(e.target.value)} />
       </div>
       <div className="mb-4">
-        <label className="block text-grey-darker text-sm font-bold mb-2" for="password">
+        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="password">
           Password
         </label>
         <div className="flex">

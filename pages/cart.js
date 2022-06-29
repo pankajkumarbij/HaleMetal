@@ -360,20 +360,20 @@ export default function Cart() {
                 <p className="text-lg font-bold text-gray-700 uppercase bg-gray-200 p-3 rounded-t-lg">Add Address</p>
                 <div className="bg-white rounded-lg border shadow-md pb-2 px-4 pt-2 mt-2">
                   <div className="mb-4 mt-2">
-                    <label className="block text-grey-darker text-sm font-bold mb-2" for="Pin Code">
+                    <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Pin Code">
                       Pin Code
                     </label>
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Pin Code" type="number" placeholder="Pin Code" onChange={(e)=>getAddress(e.target.value)} />
                   </div>
                   <div className="mb-4 mt-2">
-                    <label className="block text-grey-darker text-sm font-bold mb-2" for="Address">
+                    <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Address">
                       Address
                     </label>
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Address" type="text" placeholder="Address" onChange={(e)=>setAddress(e.target.value)} />
                   </div>
                   <div className="flex justify-between w-full">
                     <div className="mb-4 mt-2 w-1/2">
-                      <label for="category" className="block text-grey-darker text-sm font-bold mb-2">Landmark</label>
+                      <label htmlFor="category" className="block text-grey-darker text-sm font-bold mb-2">Landmark</label>
                       <select id="category" className="shadow bg-white border text-gray-darker rounded block w-full py-2 px-3" onChange={(e)=>setLandmark(e.target.value)}>
                         <option selected disabled>Choose Landmark</option>
                         {landmarks && landmarks.map((item, index) => {
@@ -385,7 +385,7 @@ export default function Cart() {
                     </div>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div className="mb-4 mt-2 w-1/2">
-                      <label className="block text-grey-darker text-sm font-bold mb-2" for="District">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="District">
                         District
                       </label>
                       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="District" type="text" placeholder="District" value={district} onChange={(e)=>setDistrict(e.target.value)} />
@@ -393,14 +393,14 @@ export default function Cart() {
                   </div>
                   <div className="flex justify-between w-full">
                     <div className="mb-4 mt-2 w-1/2">
-                      <label className="block text-grey-darker text-sm font-bold mb-2" for="State">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="State">
                         State
                       </label>
                       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="State" type="text" placeholder="State" value={state} onChange={(e)=>setState(e.target.value)} />
                     </div>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div className="mb-4 mt-2 w-1/2">
-                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Country">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Country">
                         Country
                       </label>
                       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Country" type="text" placeholder="Country" value={country} onChange={(e)=>setCountry(e.target.value)} />
@@ -417,7 +417,7 @@ export default function Cart() {
               <table className="w-full text-sm text-left text-gray-5000">
                 <thead className="text-lg text-gray-700 uppercase bg-gray-200">
                   <tr>
-                    <th colspan="2" scope="col" className="px-6 py-3">
+                    <th colSpan="2" scope="col" className="px-6 py-3">
                       Order Summary ({cartNumber} Items)
                     </th>
                   </tr>

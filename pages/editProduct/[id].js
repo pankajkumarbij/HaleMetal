@@ -106,7 +106,7 @@ export default function EditProduct() {
         <div className="border shadow-xl p-6 sm:rounded-lg">
           <p className="text-red-600 text-lg md:text-3xl w-full flex justify-center"><u><b>Edit Product</b></u></p>
           <div className="mb-4 mt-6">
-            <label for="category" className="block text-grey-darker text-sm font-bold mb-2">Select Category</label>
+            <label htmlFor="category" className="block text-grey-darker text-sm font-bold mb-2">Select Category</label>
             <select id="category" className="shadow bg-white border text-gray-darker rounded block w-full py-2 px-3" value={category} onChange={(e)=>setCategory(e.target.value)}>
               <option selected disabled>Choose Category</option>
               {categories && categories.map((item, index) => {
@@ -117,14 +117,14 @@ export default function EditProduct() {
             </select>
           </div>
           <div className="mb-4 mt-6">
-            <label className="block text-grey-darker text-sm font-bold mb-2" for="product name">
+            <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="product name">
               Full Product Name
             </label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="product name" type="text" placeholder="product name" value={productName} onChange={(e)=>setProductName(e.target.value)} />
           </div>
           <div className="mb-4 mt-6 w-full flex justify-between">
             <div className="w-6/12">
-              <label for="unit" className="block text-grey-darker text-sm font-bold mb-2">Select Unit</label>
+              <label htmlFor="unit" className="block text-grey-darker text-sm font-bold mb-2">Select Unit</label>
               <select id="unit" className="shadow bg-white border text-gray-darker rounded block w-full py-2 px-3" value={unit} onChange={(e)=>setUnit(e.target.value)}>
                 <option selected disabled>Choose Unit</option>
                 <option value="Meter">Meter</option>
@@ -138,32 +138,32 @@ export default function EditProduct() {
             </div>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <div className="w-6/12">
-              <label className="block text-grey-darker text-sm font-bold mb-2" for="price">
+              <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="price">
                 Price
               </label>
               <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="price" type="number" placeholder="price" value={price} onChange={(e)=>setPrice(e.target.value)} />
             </div>
           </div>
           <div className="mb-4 mt-6">
-            <label className="block text-grey-darker text-sm font-bold mb-2" for="size">
+            <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="size">
               Size
             </label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="size" type="text" placeholder="size" value={size} onChange={(e)=>setSize(e.target.value)} />
           </div>
           <div className="mb-4 mt-6">
-            <label className="block text-grey-darker text-sm font-bold mb-2" for="material">
+            <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="material">
               Material
             </label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="material" type="text" placeholder="material" value={material} onChange={(e)=>setMaterial(e.target.value)} />
           </div>
           <div className="mb-4 mt-6">
-            <label className="block text-grey-darker text-sm font-bold mb-2" for="Brand">
+            <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Brand">
               Brand
             </label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Brand" type="text" placeholder="brand" value={brand} onChange={(e)=>setBrand(e.target.value)} />
           </div>
           <div className="mb-4 mt-6">
-            <label className="block text-grey-darker text-sm font-bold mb-2" for="Min Quantity">
+            <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Min Quantity">
               Min Quantity
             </label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Min Quantity" type="number" placeholder="min quantity" value={min_qty} onChange={(e)=>setMinQty(e.target.value)} />
@@ -180,7 +180,7 @@ export default function EditProduct() {
             </div>
           }
           <div className="mb-4 mt-6">
-            <label className="block text-grey-darker text-sm font-bold mb-2" for="Other">
+            <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Other">
               Other
             </label>
             <input className="shadow appearance-none border rounded-l w-9/12 py-2 px-3 text-grey-darker" id="Other" type="text" placeholder="other" value={other} onChange={(e)=>setOther(e.target.value)} />

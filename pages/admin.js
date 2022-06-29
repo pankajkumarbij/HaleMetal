@@ -53,13 +53,13 @@ export default function Admin() {
         <div className="border shadow-xl p-6 sm:rounded-lg">
           <p className="text-red-600 text-3xl w-full flex justify-center"><u><b>Admin Login</b></u></p>
           <div className="mb-4 mt-6">
-            <label className="block text-grey-darker text-sm font-bold mb-2" for="mobile">
+            <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="mobile">
               Mobile Number
             </label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="mobile" type="number" placeholder="mobile number" onChange={(e)=>setMobile(e.target.value)} />
           </div>
           <div className="mb-4">
-            <label className="block text-grey-darker text-sm font-bold mb-2" for="password">
+            <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="password">
               Password
             </label>
             <div className="flex">

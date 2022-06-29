@@ -51,14 +51,14 @@ export default function Order() {
                 <div className="border shadow-md rounded-lg pb-2 px-2 pt-2 mt-4">
                   <div className="flex justify-between w-full">
                     <div className="mb-4 mt-2 w-1/2">
-                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Vehicle Number">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Vehicle Number">
                         Vehicle Number
                       </label>
                       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Vehicle Number" type="text" placeholder="Vehicle Number" value={order.vehicleNumber} />
                     </div>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div className="mb-4 mt-2 w-1/2">
-                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Vehicle Type">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Vehicle Type">
                         Vehicle Type
                       </label>
                       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Vehicle Type" type="text" placeholder="Vehicle Type" value={order.vehicleType} />
@@ -66,14 +66,14 @@ export default function Order() {
                   </div>
                   <div className="flex justify-between w-full">
                     <div className="mb-4 mt-2 w-1/2">
-                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Driver Name">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Driver Name">
                         Driver Name
                       </label>
                       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Driver Name" type="text" placeholder="Driver Name" value={order.driverName} />
                     </div>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div className="mb-4 mt-2 w-1/2">
-                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Driver Mobile">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Driver Mobile">
                         Driver Mobile
                       </label>
                       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Driver Mobile" type="number" placeholder="Driver Mobile" value={order.driverMobile} />
@@ -81,14 +81,14 @@ export default function Order() {
                   </div>
                   <div className="flex justify-between w-full">
                     <div className="mb-4 mt-2 w-1/2">
-                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Transport Charge">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Transport Charge">
                         Transport Charge
                       </label>
                       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Transport Charge" type="text" placeholder="Transport Charge" value={order.transportCharge} />
                     </div>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div className="mb-4 mt-2 w-1/2">
-                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Labour Charge">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Labour Charge">
                         Labour Charge
                       </label>
                       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Labour Charge" type="text" placeholder="Labour Charge" value={order.labourCharge} />
@@ -107,14 +107,14 @@ export default function Order() {
                   <div className="bg-white rounded-lg border shadow-md pb-2 px-2">
                     <div className="flex justify-between w-full">
                       <div className="mb-2 mt-2 w-1/2">
-                        <label className="block text-grey-darker text-sm font-bold mb-2" for="Pin Code">
+                        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Pin Code">
                           Pin Code
                         </label>
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Pin Code" type="number" placeholder="Pin Code" value={order.pinCode}disabled />
                       </div>
                       &nbsp;&nbsp;&nbsp;&nbsp;
                       <div className="mb-2 mt-2 w-1/2">
-                        <label className="block text-grey-darker text-sm font-bold mb-2" for="Address">
+                        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Address">
                           Address
                         </label>
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Address" type="text" placeholder="Address" value={order.address}disabled />
@@ -122,14 +122,14 @@ export default function Order() {
                     </div>
                     <div className="flex justify-between w-full">
                       <div className="mb-2 mt-2 w-1/2">
-                        <label className="block text-grey-darker text-sm font-bold mb-2" for="Landmark">
+                        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Landmark">
                           Landmark
                         </label>
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Landmark" type="text" placeholder="Landmark" value={order.landmark} disabled />
                       </div>
                       &nbsp;&nbsp;&nbsp;&nbsp;
                       <div className="mb-2 mt-2 w-1/2">
-                        <label className="block text-grey-darker text-sm font-bold mb-2" for="District">
+                        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="District">
                           District
                         </label>
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="District" type="text" placeholder="District" value={order.district} disabled />
@@ -137,14 +137,14 @@ export default function Order() {
                     </div>
                     <div className="flex justify-between w-full">
                       <div className="mb-4 mt-2 w-1/2">
-                        <label className="block text-grey-darker text-sm font-bold mb-2" for="State">
+                        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="State">
                           State
                         </label>
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="State" type="text" placeholder="State" value={order.state} disabled />
                       </div>
                       &nbsp;&nbsp;&nbsp;&nbsp;
                       <div className="mb-4 mt-2 w-1/2">
-                        <label className="block text-grey-darker text-sm font-bold mb-2" for="Country">
+                        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Country">
                           Country
                         </label>
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Country" type="text" placeholder="Country" value={order.country} disabled />
@@ -210,19 +210,19 @@ export default function Order() {
                   {order && 
                     <div className="bg-white rounded-lg border shadow-md pb-2 px-2">
                       <div className="mb-4 mt-2">
-                        <label className="block text-grey-darker text-sm font-bold mb-2" for="name">
+                        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="name">
                           Full Name
                         </label>
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="name" type="text" placeholder="name" value={order.name} disabled />
                       </div>
                       <div className="mb-4 mt-2">
-                        <label className="block text-grey-darker text-sm font-bold mb-2" for="Mobile">
+                        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Mobile">
                           Mobile Number
                         </label>
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Mobile" type="text" placeholder="Mobile" value={order.mobileNumber} disabled />
                       </div>
                       <div className="mb-4 mt-2">
-                        <label className="block text-grey-darker text-sm font-bold mb-2" for="Email">
+                        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="Email">
                           Email
                         </label>
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Email" type="text" placeholder="Email" value={order.email} disabled />
@@ -232,7 +232,7 @@ export default function Order() {
                   <table className="w-full text-sm text-left text-gray-5000 mt-4">
                     <thead className="text-lg text-gray-700 uppercase bg-gray-200">
                       <tr>
-                        <th colspan="2" scope="col" className="px-6 py-3">
+                        <th colSpan="2" scope="col" className="px-6 py-3">
                           Payment Summary
                         </th>
                       </tr>

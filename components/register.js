@@ -54,32 +54,32 @@ export default function Register() {
     <>
       <div className="flex justify-between space-x-5">
         <div className="mb-4">
-          <label className="block text-grey-darker text-sm font-bold mb-2" for="fname">
+          <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="fname">
             First Name
           </label>
           <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="fname" type="text" placeholder="First Name" onChange={(e)=>setFirstName(e.target.value)} />
         </div>
         <div className="mb-4">
-          <label className="block text-grey-darker text-sm font-bold mb-2" for="lname">
+          <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="lname">
             Last Name
           </label>
           <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="lname" type="text" placeholder="Last Name" onChange={(e)=>setLastName(e.target.value)} />
         </div>
       </div>
       <div className="mb-4">
-        <label className="block text-grey-darker text-sm font-bold mb-2" for="mobile">
+        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="mobile">
           Mobile Number
         </label>
         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="mobile" type="number" placeholder="mobile number" onChange={(e)=>setMobile(e.target.value)} />
       </div>
       <div className="mb-4">
-        <label className="block text-grey-darker text-sm font-bold mb-2" for="email">
+        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="email">
           Email
         </label>
         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email" type="text" placeholder="email" onChange={(e)=>setEmail(e.target.value)} />
       </div>
       <div className="mb-4">
-        <label className="block text-grey-darker text-sm font-bold mb-2" for="password">
+        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="password">
           Password
         </label>
         <div className="flex">
@@ -90,7 +90,7 @@ export default function Register() {
         </div>
       </div>
       <div className="mb-6">
-        <label className="block text-grey-darker text-sm font-bold mb-2" for="cpassword">
+        <label className="block text-grey-darker text-sm font-bold mb-2" htmlFor="cpassword">
           Confirm Password
         </label>
         <div className="flex">
