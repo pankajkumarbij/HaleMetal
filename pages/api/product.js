@@ -35,7 +35,8 @@ const postProduct = (req, res) => {
     material: req.body.material,
     brand: req.body.brand,
     min_qty: req.body.min_qty,
-    others: req.body.others
+    others: req.body.others,
+    image: req.body.image
   })
   newProduct.save()
   .then(product => {

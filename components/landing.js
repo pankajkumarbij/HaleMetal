@@ -30,14 +30,15 @@ export default function Landing(){
         <div className="md:flex justify-center w-full">
           <div className="w-full md:px-0 md:w-1/2 flex justify-center">
             <div className="flex-col w-10/12 flex justify-center md:pl-8 pt-16 md:pt-0">
-              <p className="text-orange-400 text-lg md:text-4xl font-bold my-0.5 md:my-1 flex justify-center md:justify-start">Hale Metal and Electro India</p>
+              {/* <img src="logo.png" alt="logo home" className="w-1/2"/> */}
+              <p className="text-green-400 text-lg md:text-4xl font-bold my-0.5 md:my-1 flex justify-center md:justify-start">Hale Metal and Electro India</p>
               <div className="flex justify-center md:justify-start">
                 <p className="text-white text-lg md:text-4xl font-bold my-0.5 md:my-1">We Manufacturer of </p>&nbsp;&nbsp;&nbsp;
                 <TextTransition className="text-gray-800 text-lg md:text-4xl font-bold my-0.5 md:my-1" springConfig={presets.wobbly}>
                   {TEXTS[index%TEXTS.length]}
                 </TextTransition>
               </div>
-              <p className="text-green-400 text-lg md:text-4xl font-bold my-0.5 md:my-1 flex justify-center md:justify-start">Buy Your Needs at The Best Deal</p>
+              <p className="text-orange-400 text-lg md:text-4xl font-bold my-0.5 md:my-1 flex justify-center md:justify-start">Buy Your Needs at The Best Deal</p>
               <Link href="/products/all">
                 <form className="w-full md:w-3/4 md:px-0 mt-12">   
                   <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>

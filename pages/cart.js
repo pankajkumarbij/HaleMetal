@@ -299,7 +299,7 @@ export default function Cart() {
                 return (
                   <div key={index} className="bg-white rounded-lg border shadow-md pb-2 px-2">
                     <div className="flex flex-col items-center md:flex-row md:w-full">
-                      <img className="object-cover w-full h-80 rounded-t-lg md:h-auto md:w-1/2 md:rounded-none md:rounded-l-lg" src="/cabletray.png" alt=""/>
+                      <img className="object-cover w-full h-80 rounded-t-lg md:h-auto md:w-1/2 md:rounded-none md:rounded-l-lg" src={item.product.image ? item.product.image : "/logo.png"} alt=""/>
                       <div className="flex flex-col justify-between w-full leading-normal">
                         <button onClick={() => deleteProduct(item._id)} className="flex justify-end text-red-700 hover:text-red-800 py-1 rounded-md px-2"><FaRegTrashAlt className="mt-0.5 mr-1"/> Remove</button>
                         <div className="p-4">

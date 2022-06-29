@@ -20,6 +20,8 @@ export default function AddProduct() {
   const [others, setOthers]=useState([]);
   const [error, setError]=useState("");
   const [success, setSuccess]=useState("");
+  const [image, setImage] = useState();
+  const [imgUrl, setImgUrl ] = useState("");
 
   useEffect(() => {
 
@@ -51,8 +53,26 @@ export default function AddProduct() {
     values.splice(index, 1);
     setOthers(values);
   }
+
+  function uploadImage() {
+    const data = new FormData()
+    data.append("file", image)
+    data.append("upload_preset", "product")
+    data.append("cloud_name","halemetalindia")
+
+    fetch("https://api.cloudinary.com/v1_1/halemetalindia/image/upload",{
+      method:"post",
+      body: data
+    })
+    .then(resp => resp.json())
+    .then(data => {
+      setImgUrl(data.url)
+    })
+    .catch(err => console.log(err))
+  }
     
   function NewProduct() {
+
     axios.post(url+'/api/product', {
       category,
       productName,
@@ -62,7 +82,8 @@ export default function AddProduct() {
       material,
       brand,
       min_qty,
-      others
+      others,
+      image: imgUrl
     })
     .then(function (result) {
       if(result.data.error){
@@ -98,6 +119,13 @@ export default function AddProduct() {
               Full Product Name
             </label>
             <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="product name" type="text" placeholder="product name" onChange={(e)=>setProductName(e.target.value)} />
+          </div>
+          <div className="mb-4 mt-6">
+            <label className="block text-grey-darker text-sm font-bold mb-2" for="file_input">
+              Upload Image
+            </label>
+            <input onChange={(e)=>setImage(e.target.files[0])} className="shadow appearance-none border rounded-l w-9/12 py-1 px-3 text-grey-darker" id="file_input" type="file" />
+            <button onClick={()=> uploadImage()} className="mb-2 p-2 py-2 text-white bg-green-700 rounded-r hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 w-3/12">Upload</button>
           </div>
           <div className="mb-4 mt-6 w-full flex justify-between">
             <div className="w-6/12">

@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
-import { FaExclamationTriangle, FaRegCheckCircle } from 'react-icons/fa';
-import { FaWindowClose } from 'react-icons/fa';
-import { AiOutlineClose, AiOutlineCaretRight } from 'react-icons/ai';
+import { AiOutlineCaretRight } from 'react-icons/ai';
 import axios from 'axios';
 import url from '../../helpers/url';
 import NavBar from '../../components/navbar';
@@ -45,6 +43,62 @@ export default function Order() {
       <div className="w-full felx justify-center mt-12 font-serif">
         <div className="pt-6 pb-6 sm:rounded-lg">
           <p className="text-red-600 text-lg md:text-3xl w-full flex justify-center"><u><b>Order Details</b></u></p>
+          {order && order.vehicleType &&
+          <div className="bg-white rounded-lg px-4">
+            <div className="w-full felx justify-center">
+              <div className="container mx-auto md:w-10/12">
+                <p className="text-lg font-bold text-gray-700 uppercase bg-gray-200 p-3 rounded-t-lg mt-4">Transport & Labour</p>
+                <div className="border shadow-md rounded-lg pb-2 px-2 pt-2 mt-4">
+                  <div className="flex justify-between w-full">
+                    <div className="mb-4 mt-2 w-1/2">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Vehicle Number">
+                        Vehicle Number
+                      </label>
+                      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Vehicle Number" type="text" placeholder="Vehicle Number" value={order.vehicleNumber} />
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div className="mb-4 mt-2 w-1/2">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Vehicle Type">
+                        Vehicle Type
+                      </label>
+                      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Vehicle Type" type="text" placeholder="Vehicle Type" value={order.vehicleType} />
+                    </div>
+                  </div>
+                  <div className="flex justify-between w-full">
+                    <div className="mb-4 mt-2 w-1/2">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Driver Name">
+                        Driver Name
+                      </label>
+                      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Driver Name" type="text" placeholder="Driver Name" value={order.driverName} />
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div className="mb-4 mt-2 w-1/2">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Driver Mobile">
+                        Driver Mobile
+                      </label>
+                      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Driver Mobile" type="number" placeholder="Driver Mobile" value={order.driverMobile} />
+                    </div>
+                  </div>
+                  <div className="flex justify-between w-full">
+                    <div className="mb-4 mt-2 w-1/2">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Transport Charge">
+                        Transport Charge
+                      </label>
+                      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Transport Charge" type="text" placeholder="Transport Charge" value={order.transportCharge} />
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div className="mb-4 mt-2 w-1/2">
+                      <label className="block text-grey-darker text-sm font-bold mb-2" for="Labour Charge">
+                        Labour Charge
+                      </label>
+                      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="Labour Charge" type="text" placeholder="Labour Charge" value={order.labourCharge} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          }
           <div className="w-full felx justify-center">
             <div className="md:flex container mx-auto md:w-10/12">
               <div className="grid gap-4 pt-4 px-4 md:pt-8 md:px-2 md:w-8/12">
@@ -103,7 +157,7 @@ export default function Order() {
                   return (
                     <div key={index} className="bg-white rounded-lg border shadow-md pb-2 px-2">
                       <div className="flex flex-col items-center md:flex-row md:w-full">
-                        <img className="object-cover w-full h-80 rounded-t-lg md:h-auto md:w-1/2 md:rounded-none md:rounded-l-lg" src="/cabletray.png" alt=""/>
+                        <img className="object-cover w-full h-80 rounded-t-lg md:h-auto md:w-1/2 md:rounded-none md:rounded-l-lg" src={item.product.image ? item.product.image : "/logo.png"} alt=""/>
                         <div className="flex flex-col justify-between w-full leading-normal">
                           <div className="p-4">
                             <h5 className="flex justify-center mb-2 text-xl font-bold tracking-tight text-gray-800">{item.product.productName}</h5>

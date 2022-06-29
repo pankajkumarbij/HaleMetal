@@ -30,6 +30,9 @@ const productSchema = new mongoose.Schema({
   others: {
     type: mongoose.Schema.Types.Mixed,
   },
+  image: {
+    type: String,
+  },
 }, {
   timestamps: true
 });

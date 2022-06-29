@@ -136,7 +136,7 @@ export default function Product() {
               return (
                 <div key={index} className="bg-white rounded-lg border shadow-md pb-2 px-2">
                   <div className="flex flex-col items-center md:flex-row md:w-full">
-                    <img className="object-cover w-full h-80 rounded-t-lg md:h-auto md:w-1/2 md:rounded-none md:rounded-l-lg" src="/cabletray.png" alt=""/>
+                    <img className="object-cover w-full h-80 rounded-t-lg md:h-auto md:w-1/2 md:rounded-none md:rounded-l-lg" src={item.image ? item.image : "/logo.png"} alt=""/>
                     <div className="flex flex-col justify-between w-full p-4 leading-normal">
                       <h5 className="flex justify-center mb-2 text-xl font-bold tracking-tight text-gray-800">{item.productName}</h5>
                       <div className="flex justify-between">
