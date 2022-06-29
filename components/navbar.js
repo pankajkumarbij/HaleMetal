@@ -113,7 +113,7 @@ export default function NavBar() {
             :
               <div>
                 <button type="button" onClick={() => setIsOpenModel(1)} className="flex border-2 text-white bg-blue-700 hover:bg-blue-800 px-2 py-1 rounded-md">
-                  <FiLogIn className="mt-1" />&nbsp;Login
+                  <FiLogIn className="mt-1 mr-1" />Login
                 </button> 
               </div>
             }
