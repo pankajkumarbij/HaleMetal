@@ -80,9 +80,6 @@ export default function ManageProduct() {
                   <th scope="col" className="px-6 py-3">
                     View
                   </th>
-                  <th scope="col" className="px-6 py-3">
-                    Cancel
-                  </th>
                 </tr>
               </thead>
               <tbody>
