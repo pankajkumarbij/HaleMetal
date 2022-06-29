@@ -163,7 +163,7 @@ export default function NavBar() {
             <>
               <Login/>
               <p className="flex justify-center flex-row align-baseline font-bold text-sm text-blue hover:text-blue-darker" href="/">
-                Don't have an account? &nbsp; <button className="text-blue-400" onClick={() => setIsOpenModel(2)}>Register here</button>
+                Don't have an account? <button className="ml-1 text-blue-400" onClick={() => setIsOpenModel(2)}>Register here</button>
               </p>
             </>
             }
@@ -171,7 +171,7 @@ export default function NavBar() {
             <>
               <Register/>
               <p className="flex justify-center flex-row align-baseline font-bold text-sm text-blue hover:text-blue-darker" href="/">
-                Already have an account? &nbsp; <button className="text-blue-400" onClick={() => setIsOpenModel(1)}>Login here</button>
+                Already have an account? <button className="ml-1 text-blue-400" onClick={() => setIsOpenModel(1)}>Login here</button>
               </p>
             </>
             }
