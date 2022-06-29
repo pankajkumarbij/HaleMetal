@@ -5,6 +5,7 @@ import axios from 'axios';
 import url from '../helpers/url';
 import cookie from 'js-cookie';
 import NavBar from '../components/navbar';
+import Link from "next/link";
 
 export default function Admin() {
 
@@ -68,9 +69,11 @@ export default function Admin() {
                 { !showPassword ? <FaEye/> : <FaEyeSlash/> }
               </button>
             </div>
-            <a className="font-bold text-sm text-red-500 hover:text-blue-darker" href="/">
-              Forgot Password?
-            </a>
+            <Link href="/">
+              <a className="font-bold text-sm text-red-500 hover:text-blue-darker">
+                Forgot Password?
+              </a>
+            </Link>
           </div>
           <button className="mb-2 p-2 text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full" type="button" onClick={()=> Login()} >
             Sign In
