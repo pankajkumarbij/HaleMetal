@@ -64,8 +64,8 @@ export default function NavBar() {
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/">
               <a className="flex items-center">
-              {/* <img src="logo.png" className="mr-3 h-6 sm:h-9" alt="Logo"/> */}
-              <p className="self-center text-xl font-semibold whitespace-nowrap text-green-200">HMEI</p>
+              <img src="logo.png" className="mr-3 h-6 sm:h-9" alt="Logo"/>
+              {/* <p className="self-center text-xl font-semibold whitespace-nowrap text-green-200">HMEI</p> */}
             </a>
           </Link> 
           <div className="flex items-center md:order-2">

@@ -9,7 +9,8 @@ export default function Footer(){
         <div className="md:flex px-2 md:px-16">
           <div className="w-full md:w-1/4 p-2 md:p-8 mt-4 md:mt-0">
             <center>
-              <p className="text-4xl text-green-200 font-semibold">HMEI</p>
+              <img src="logo.png" className="mr-3 h-8 sm:h-9" alt="Logo"/>
+              {/* <p className="text-4xl text-green-200 font-semibold">HMEI</p> */}
               <p className="text-white italic mt-2">Plot No 461</p>
               <p className="text-white italic mt-2">Sector-52, Industrial Area</p>
               <p className="text-white italic mt-1">Chandigarh, India - 432321</p>
